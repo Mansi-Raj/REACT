@@ -20,13 +20,26 @@
         );
       }
 
-      const chat = (
+      function ChatMessage({message, sender}){
+        return(
+          <div>
+            {sender === 'bot' && <img src="./assets/robot.png" width="50"/>}
+            {message}
+            {sender==='user' && <img src="./assets/user.png" width="50"/>}
+          </div>
+        );
+      }
+
+      function App(){ 
+        return (
         <>
           <ChatInput />
+          <ChatMessage message = "Hello" sender="user" />
+          <ChatMessage message = "Hello, how can i help you?" sender="bot" />
         </>
-      );
+      )};
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render(chat);
+      ReactDOM.createRoot(container).render(<App />);
     </script>
   </body>
 </html>
