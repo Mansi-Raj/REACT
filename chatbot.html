@@ -178,7 +178,11 @@
       }
 
       function App(){ 
-        const [chatMessages, setChatMessages] = React.useState([])
+        const [chatMessages, setChatMessages] = React.useState([{
+          message:'',
+          sender:'',
+          id:''
+        }])
 
         return (
         <div className="app-container">
