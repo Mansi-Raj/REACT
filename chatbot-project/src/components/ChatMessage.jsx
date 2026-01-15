@@ -1,5 +1,5 @@
-import { robotImg } from '../assets/robot.png'
-import { userImg } from '../assets/user.png'
+import robotImg from '../assets/robot.png'
+import userImg  from '../assets/user.png'
 
 export function ChatMessage({message, sender}){
   return(
