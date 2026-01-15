@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react'
+import { ChatMessage } from './ChatMessage';
 
 export function ChatMessages({chatMessages}){
 

@@ -4,11 +4,7 @@ import { ChatInput } from './components/ChatInput'
 import './App.css'
 
 export function App(){ 
-  const [chatMessages, setChatMessages] = useState([{
-    message:'',
-    sender:'',
-    id:''
-  }])
+  const [chatMessages, setChatMessages] = useState([])
 
   return (
     <div className="app-container">
