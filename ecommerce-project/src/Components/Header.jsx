@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import './header.css';
-export function Hearder(){
+
+export function Header(){
   return(
     <div className="header">
       <div className="left-section">
@@ -11,7 +12,7 @@ export function Hearder(){
             src="images/mobile-logo-white.png" />
         </Link>
       </div>
-      
+
       <div className="middle-section">
         <input className="search-bar" type="text" placeholder="Search" />
 

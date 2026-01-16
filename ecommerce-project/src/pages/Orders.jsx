@@ -1,11 +1,11 @@
-import { Headers } from '../Components/Header'
+import { Header } from '../Components/Header'
 import './Styles/orders.css'
 
 export function Orders(){
   return(
     <>
       <title>Orders</title>
-      <Headers />
+      <Header />
 
       <div className="orders-page">
         <div className="page-title">Your Orders</div>

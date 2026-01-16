@@ -1,11 +1,11 @@
-import { Hearder } from '../Components/Header';
+import { Header } from '../Components/Header';
 import './Styles/HomePage.css';
 
 export function HomePage(){
   return(
     <>
       <title>Ecommerce Project</title>
-      <Hearder />
+      <Header />
 
       <div className="home-page">
         <div className="products-grid">
